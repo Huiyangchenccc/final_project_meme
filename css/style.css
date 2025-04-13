@@ -17,7 +17,7 @@
 /* Body styles */
 body {
     font-size: 16px;
-    background: black;
+    background: #161415;
     font-family: 'Montserrat', sans-serif;
     color: black;
     overflow-x: hidden;
@@ -44,30 +44,39 @@ a:hover {
     text-decoration: underline;
 }
 nav {
-    overflow: hidden;
-    background-color: #fff5c7;
-    border-radius: 10px;
-    width: 100%;
-    padding: 30px;
-    margin-top: 30px;
+  overflow: hidden;
+  background-color: #FFCB05;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
 nav a {
-    color: black;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    padding: 15px 15px;
-    text-decoration: none;
-    font-size: 1.2em;
-    display: block;
-    margin-right: 15px;
+  color: black;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.2em;
+  display: block;
 }
 
 nav a.active {
-    background-color: #004e97;
-    color: #FFCB05;
-    border-radius: 10px;
-    font-weight: bold;
+  background-color: #00274C;
+  color: #FFCB05;
+  border-radius: 10px;
+
+  main {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+      justify-content: center;
+      align-content: center;
+      max-width: 100%;
+      overflow-x: hidden;
+  }
+
+  align-content: center;
 }
 
 /* Headings */
@@ -97,79 +106,52 @@ p {
     margin-bottom: 20px;
 }
 
+.meme-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  list-style-type: none;
+  padding: 1rem;
+  margin: 0;
+}
 
+.meme-grid li {
+  width: 100%;
+  max-width: 300px;
+}
 
-   .meme-grid ul {
-    display: flex;
+/* Style the images */
+.meme-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.meme-grid img:hover {
+  transform: scale(1.5);
+}
+
+/* For larger screens: multiple images in a row */
+@media screen and (min-width: 600px) {
+  .meme-grid {
+    flex-direction: row;
     flex-wrap: wrap;
-    flex-direction: column; /* Mobile: stack vertically */
+    justify-content: center;
   }
-  
+
   .meme-grid li {
-    height: 30vh; /* Default mobile height */
-    flex-grow: 1;
-    width: 100%;
+    flex: 1 1 200px;
+    max-width: 220px;
   }
-  
-  .meme-grid li:last-child {
-    /* No science in 10 – just works best visually */
-    flex-grow: 10;
-  }
-  
+
   .meme-grid img {
-    max-height: 100%;
-    min-width: 100%;
-    object-fit: cover;
-    vertical-align: bottom;
+    height: 220px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image fits within the height */
   }
-  
-  ul {
-    padding: 0;
-    margin: 0;
-  }
-  
-  li {
-    height: auto;
-    width: 100%;
-  }
-  
-  img {
-    width: 100%;
-    max-height: 75vh;
-    min-width: 0;
-  }
-  
-  /* ===============
-     Media Queries 
-     =============== */
-  
-  /* Slightly taller screens (portrait tablets and up) */
-  @media (min-width: 600px) {
-    .meme-grid ul {
-      flex-direction: row;
-    }
-  
-    .meme-grid li {
-      height: 80vh;
-    }
-  }
-  
-  /* Landscape tablets or small laptops */
-  @media (min-width: 900px) {
-    .meme-grid li {
-      height: 80vh;
-    }
-  }
-  
-  /* Desktop */
-  @media (min-width: 1200px) {
-    .meme-grid li {
-      height: 80vh;
-    }
-  }
-  
-  
-  
+}
 
 
 /* Footer */
