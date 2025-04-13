@@ -1,13 +1,14 @@
 .skip {
-    position: absolute;
-    top: -100px;
-}
-.skip:focus {
-    top: 20px;
+  position: absolute;
+  top: -100px;
 }
 
-:focus{
-    border: 3px solid #0000;
+.skip:focus {
+  top: 20px;
+}
+
+:focus {
+  border: 3px solid #0000;
 }
 
 /* * {
@@ -16,33 +17,34 @@
 
 /* Body styles */
 body {
-    font-size: 16px;
-    background: #161415;
-    font-family: 'Montserrat', sans-serif;
-    color: black;
-    overflow-x: hidden;
-    margin: 20px;
-    padding: 20px;
+  font-size: 16px;
+  background: #161415;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  overflow-x: hidden;
+  margin: 20px;
+  padding: 20px;
 }
 
 /* Logo image styles */
-img#logo{
-    max-height: 70px;
-    max-width: 70px;
-    margin: 28px auto 12px auto;
-    border-radius: 8px;
+img#logo {
+  max-height: 70px;
+  max-width: 70px;
+  margin: 28px auto 12px auto;
+  border-radius: 8px;
 }
 
 /* Navigation */
 a {
-    color: lightblue;
-    text-decoration: underline;
+  color: lightblue;
+  text-decoration: underline;
 }
 
 a:hover {
-    color: #0a1eff;
-    text-decoration: underline;
+  color: #0a1eff;
+  text-decoration: underline;
 }
+
 nav {
   overflow: hidden;
   background-color: pink;
@@ -67,43 +69,44 @@ nav a.active {
   border-radius: 10px;
 
   main {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-gap: 10px;
-      justify-content: center;
-      align-content: center;
-      max-width: 100%;
-      overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    justify-content: center;
+    align-content: center;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   align-content: center;
 }
 
 /* Headings */
-h1{
-    font-size: 35px;
-    color: pink;
-    text-align: left;
-    line-height: 45px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+h1 {
+  font-size: 35px;
+  color: pink;
+  text-align: left;
+  line-height: 45px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 h2 {
-    font-size: 28px;
-    color: white;
-    text-align: left;
-    line-height: 35px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  font-size: 28px;
+  color: white;
+  text-align: left;
+  line-height: 35px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
+
 /* Paragraph styles */
 p {
-    color: white;
-    text-align: left;
-    font-size: 16px;
-    line-height: 22px;
-    margin-bottom: 20px;
+  color: white;
+  text-align: left;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 20px;
 }
 
 .meme-grid {
@@ -126,12 +129,33 @@ p {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
 }
 
 .meme-grid img:hover {
   transform: scale(1.5);
+}
+
+/* huhcat */
+img#huh_cover {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+/* grinch */
+img#grinch_cover {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+/* About */
+video#player1 {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 /* For larger screens: multiple images in a row */
@@ -148,16 +172,18 @@ p {
   }
 
   .meme-grid img {
-    height: 220px; /* Set a fixed height */
-    object-fit: cover; /* Ensure the image fits within the height */
+    height: 220px;
+    /* Set a fixed height */
+    object-fit: cover;
+    /* Ensure the image fits within the height */
   }
 }
 
 
 /* Footer */
 footer {
-    /* background-color: darkgrey; */
-    color: white;
-    /* padding: 20px;
+  /* background-color: darkgrey; */
+  color: white;
+  /* padding: 20px;
     width: 100%; */
 }

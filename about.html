@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico">
     <title>About</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
@@ -24,16 +25,101 @@
     </header>
 
     <main id="main">
-        <!-- Main content goes here -->
+        <h1>
+            About Purrfect Cat Memes
+        </h1>
+        <p>
+            Welcome to Purrfect Memes, the ultimate playground for cat meme lovers! We're a community of feline fanatics
+            and internet humor enthusiasts who believe that life is better with a daily dose of whiskers and witty
+            captions. Whether you're here to laugh, share, or just scroll through an endless stream of fluffy chaos,
+            you’ve found your people. From classic grumpy cats to the freshest paw-sibilities in meme culture, we’ve got
+            the purrfect blend of cute and hilarious to keep you smiling.
+        </p>
+
+        <figure>
+            <div class="play-button">
+                <button id="play-pause">▶️</button>
+                <span id="volume"></span>
+            </div>
+
+            <video class="video" autoplay="false" width="640" height="360" id="player1" preload="none"
+                src="images/oiia.mov">
+
+                <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions">
+                Your browser does not support HTML5 video.
+            </video>
+
+            <div class="options">
+                <button id="slower">🐢</button>
+                <button id="faster">🐇</button>
+                <button id="mute">🔇</button>
+            </div>
+
+            <label for="slider">Volume</label>: 0 <input type="range" id="slider" min="0" max="100" value="100"
+                step="10"> 100%<br>
+            <div>Volume is: <span id="volume"> </span><br><br></div>
+        </figure>
+
+        <h2>
+            Messages from the Purrfect Memes Creators
+        </h2>
+        <p>Thanks for stopping by! Whether you're here for a quick laugh or to lose yourself in a never-ending
+            stream of feline foolishness, we’re glad to have you in the meme fam.
+            Cheers! --- By Qizi and Huiyang :P
+        </p>
+
+
+        <!-- Drag Interaction -->
+        <style>
+            .droptarget {
+                width: 100px;
+                height: 100px;
+                margin: 90px;
+                background-size: cover;
+                border: none;
+            }
+
+            #start {
+                background-image: url('images/apple.png');
+            }
+
+            #end {
+                background-image: url('images/ordinary_cat.png');
+            }
+
+            #hiddenImage {
+                display: none;
+                width: 100px;
+                height: 100px;
+                background-image: url('images/applecat.gif');
+                background-size: cover;
+            }
+        </style>
+
+        <h2>
+            You've Been Assigned A Task!
+        </h2>
+        <p>Create an apple cat!</p>
+
+        <div id="start" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/apple.png" alt="Just an apple" ondragstart="dragStart(event)" draggable="true" id="dragtarget" width="100">
+        </div>
+        <br>
+        <div id="end" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="hiddenImage"></div>
+
+
+
+<p id="demo"></p>
+
     </main>
+
 
     <footer>
         <p>We love meme since <span id="year"></span> | <a href="mailto:huiyangc@umich.edu">huiyangc@umich.edu</a></p>
     </footer>
 </body>
+<script src="js/about.js"></script>
 
-<script>
-    document.getElementById("year").innerHTML = new Date().getFullYear();
-</script>
 
 </html>
