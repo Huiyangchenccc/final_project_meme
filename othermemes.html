@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Meme Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <a class="skip" href="#main">Skip to Main Content</a>
+    <header>
+        <img id="logo" src="images/logo.jpeg" width="100" alt="Meme Logo">
+        <nav>
+            <ul>
+                <li><a href="catmeme.html">Cat Meme</a></li>
+                <li><a class="active" href="othermemes.html">Other Memes</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <h1>
+            Most Trending Memes
+        </h1>
+        <p>
+            We really really love memes!
+        </p>
+        <div>
+            <ul class="meme-grid">
+                <li>
+                  <img src="images/grinch.gif" alt="Meme 1" loading="lazy">
+                </li>
+                <li>
+                  <img src="images/sloth.gif" alt="Meme 1" loading="lazy">
+                </li>
+                <li>
+                    <img src="images/tom_begging.jpg" alt="Meme 3" loading="lazy">
+                </li>
+                <li>
+                    <img src="images/monkey.gif" alt="monkey" loading="lazy">
+                </li>
+                <li>
+                    <img src="images/girl_no.gif" alt="girl_no" loading="lazy">
+                </li>
+                <li>
+                    <img src="images/spider_man.gif" alt="spider_man" loading="lazy">
+                </li>
+                <li>
+                    <img src="images/drake.jpg" alt="drake" loading="lazy">
+                </li>
+                <li>
+                    <img src="images/pika.jpg" alt="pika" loading="lazy">
+                </li>
+                <li>
+                    <img src="images/pooh.jpg" alt="pooh" loading="lazy">
+                </li>
+            </ul>
+        </div>
+
+
+
+    </main>
+
+    <footer>
+        <p>We love meme since <span id="year"></span> | <a href="mailto:huiyangc@umich.edu">huiyangc@umich.edu</a></p>
+    </footer>
+</body>
+
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+
+</html>
