@@ -1,0 +1,181 @@
+.skip {
+    position: absolute;
+    top: -100px;
+}
+.skip:focus {
+    top: 20px;
+}
+
+:focus{
+    border: 3px solid #0000;
+}
+
+/* * {
+    box-sizing: border-box;
+} */
+
+/* Body styles */
+body {
+    font-size: 16px;
+    background: black;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    overflow-x: hidden;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Logo image styles */
+img#logo{
+    max-height: 70px;
+    max-width: 70px;
+    margin: 28px auto 12px auto;
+    border-radius: 8px;
+}
+
+/* Navigation */
+a {
+    color: lightblue;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #0a1eff;
+    text-decoration: underline;
+}
+nav {
+    overflow: hidden;
+    background-color: #fff5c7;
+    border-radius: 10px;
+    width: 100%;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+nav a {
+    color: black;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: block;
+    margin-right: 15px;
+}
+
+nav a.active {
+    background-color: #004e97;
+    color: #FFCB05;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* Headings */
+h1{
+    font-size: 35px;
+    color: pink;
+    text-align: left;
+    line-height: 45px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 28px;
+    color: white;
+    text-align: left;
+    line-height: 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/* Paragraph styles */
+p {
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+
+
+   .meme-grid ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; /* Mobile: stack vertically */
+  }
+  
+  .meme-grid li {
+    height: 30vh; /* Default mobile height */
+    flex-grow: 1;
+    width: 100%;
+  }
+  
+  .meme-grid li:last-child {
+    /* No science in 10 – just works best visually */
+    flex-grow: 10;
+  }
+  
+  .meme-grid img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    height: auto;
+    width: 100%;
+  }
+  
+  img {
+    width: 100%;
+    max-height: 75vh;
+    min-width: 0;
+  }
+  
+  /* ===============
+     Media Queries 
+     =============== */
+  
+  /* Slightly taller screens (portrait tablets and up) */
+  @media (min-width: 600px) {
+    .meme-grid ul {
+      flex-direction: row;
+    }
+  
+    .meme-grid li {
+      height: 80vh;
+    }
+  }
+  
+  /* Landscape tablets or small laptops */
+  @media (min-width: 900px) {
+    .meme-grid li {
+      height: 80vh;
+    }
+  }
+  
+  /* Desktop */
+  @media (min-width: 1200px) {
+    .meme-grid li {
+      height: 80vh;
+    }
+  }
+  
+  
+  
+
+
+/* Footer */
+footer {
+    /* background-color: darkgrey; */
+    color: white;
+    /* padding: 20px;
+    width: 100%; */
+}
