@@ -45,7 +45,7 @@ a:hover {
 }
 nav {
   overflow: hidden;
-  background-color: #FFCB05;
+  background-color: pink;
   width: 100%;
   margin-top: 20px;
   border-radius: 10px;
@@ -62,8 +62,8 @@ nav a {
 }
 
 nav a.active {
-  background-color: #00274C;
-  color: #FFCB05;
+  background-color: #ff52e8;
+  color: rgb(0, 0, 0);
   border-radius: 10px;
 
   main {
