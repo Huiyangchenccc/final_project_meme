@@ -81,4 +81,25 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// Filter system
+
+function filterSelection(category) {
+    let items = document.getElementsByClassName("filter-item");
+
+    for (let i = 0; i < items.length; i++) {
+        let item = items[i];
+        if (category === "all") {
+            item.style.display = "list-item";
+        } else {
+            item.style.display = item.classList.contains(category) ? "list-item" : "none";
+        }
+    }
+
+    // Update button active state
+    let buttons = document.querySelectorAll("#myBtnContainer .btn");
+    buttons.forEach(btn => btn.classList.remove("active"));
+    event.target.classList.add("active");
+}
+
+
 document.getElementById("year").innerHTML = new Date().getFullYear();

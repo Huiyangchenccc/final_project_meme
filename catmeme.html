@@ -28,97 +28,156 @@
         <h1>
             Cat Memes
         </h1>
+
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('energetic')"> Energetic</button>
+            <button class="btn" onclick="filterSelection('skeptical')"> Skeptical</button>
+            <button class="btn" onclick="filterSelection('depressed')"> Depressed</button>
+            <button class="btn" onclick="filterSelection('judgemental')"> Judgemental</button>
+            <button class="btn" onclick="filterSelection('speechless')"> Speechless</button>
+            <button class="btn" onclick="filterSelection('xxoo')"> XXOO</button>
+        </div>
+        
+
+
         <div>
             <ul class="meme-grid">
                 <!-- huhaudioplayhere -->
-                <li>
+
+                <li class="filter-item skeptical">
                     <a href="huhcat.html">
                         <img src="images/huh_cat.gif" alt="huh_cat" id="huhcat">
                     </a>
                     <audio id="huhCatAudio" src="audio/huh.mp3"></audio>
                 </li>
-                <li>
+
+
+                <li class="filter-item judgemental">
                     <img src="images/boomcat.jpg" alt="boomcat" loading="lazy">
                 </li>
 
                 <!-- bananacataudioplayhere -->
-                <li>
+                <li class="filter-item depressed">
                     <img src="images/banana.gif" alt="bananacat" id="bananacat" loading="lazy">
                     <audio id="bananaCatAudio" src="audio/banana.mp3"></audio>
                 </li>
 
-                <li>
+                <li class="filter-item energetic">
                     <img src="images/applecat.gif" alt="applecat" loading="lazy">
                 </li>
-                <li>
+
+                <li class="filter-item depressed">
                     <img src="images/crocscat.jpeg" alt="crocscat" loading="lazy">
                 </li>
-                <li>
+
+                <li class="filter-item depressed">
                     <img src="images/Crying cat.jpeg" alt="Crying" loading="lazy">
                 </li>
 
                 <!-- powercataudioplayhere -->
-                <li>
+                <li class="filter-item energetic">
                     <img src="images/powercat.jpeg" alt="powercat" id="powercat" loading="lazy">
                     <audio id="powerCatAudio" src="audio/power.mp3"></audio>
                 </li>
 
                 <!-- happycataudioplayhere -->
-                <li>
+                <li class="filter-item energetic">
                     <img src="images/happycat.gif" alt="happycat" id="happycat" loading="lazy">
                     <audio id="happyCatAudio" src="audio/happy-happy-happy-cat.mp3"></audio>
                 </li>
 
-                <li>
+                <li class="filter-item skeptical">
                     <img src="images/molagucat.jpeg" alt="molagucat" loading="lazy">
                 </li>
-                <li>
+
+                <li class="filter-item speechless">
                     <img src="images/baldcat.jpeg" alt="baldcat" loading="lazy">
                 </li>
-                <li>
+
+                <li class="filter-item judgemental">
                     <img src="images/eyeclosedcat.jpeg" alt="eyeclosedcat" loading="lazy">
                 </li>
-                <li>
+
+                <li class="filter-item speechless">
                     <img src="images/sittingcat.jpeg" alt="sittingcat" loading="lazy">
                 </li>
 
                 <!-- 紫啧cataudioplayhere -->
-                <li>
+                <li class="filter-item xxoo">
                     <img src="images/zizecat.jpeg" alt="zizecat" id="zizecat" loading="lazy">
                     <audio id="zizeCatAudio" src="audio/zize.mp3"></audio>
                 </li>
 
-                <li>
+                <li class="filter-item speechless">
                     <img src="images/watercat.jpeg" alt="watercat" loading="lazy">
                 </li>
-                <li>
+
+                <li class="filter-item judgemental">
                     <img src="images/Bored Cat GIF.gif" alt="boredcat" loading="lazy">
                 </li>
-                <li>
+                <li class="filter-item judgemental">
                     <img src="images/bosscat.jpeg" alt="bosscat" loading="lazy">
                 </li>
-                <li>
+                <li class="filter-item depressed">
                     <img src="images/goodcat.jpeg" alt="goodcat" loading="lazy">
                 </li>
-                <li>
+                <li class="filter-item judgemental">
                     <img src="images/smilecat.jpeg" alt="smilecat" loading="lazy">
                 </li>
-                <li>
+                <li class="filter-item judgemental">
                     <img src="images/Nerd cat meme.jpeg" alt="nerdcat" loading="lazy">
                 </li>
-                <li>
+                <li class="filter-item xxoo">
                     <img src="images/In Love Cat GIF.gif" alt="inlovecat" loading="lazy">
                 </li>
-                <li>
+                <li class="filter-item judgemental">
                     <img src="images/Nice trick - WTF.jpeg" alt="nicetrickcat" loading="lazy">
                 </li>
-                <li>
+                <li class="filter-item speechless">
                     <img src="images/download.gif" alt="signcat" loading="lazy">
                 </li>
-                <li>
+                <li class="filter-item speechless">
                     <img src="images/Confue.jpeg" alt="confuecat" loading="lazy">
                 </li>
             </ul>
+
+
+            <!-- <ul class="meme-grid">
+                <li class="filter-item energetic">
+                    <a href="huhcat.html">
+                        <img src="images/huh_cat.gif" alt="huh_cat" id="huhcat">
+                    </a>
+                    <audio id="huhCatAudio" src="audio/huh.mp3"></audio>
+                </li>
+            
+                <li class="filter-item energetic">
+                    <img src="images/applecat.gif" alt="applecat" loading="lazy">
+                </li>
+            
+                <li class="filter-item skeptical">
+                    <img src="images/boomcat.jpg" alt="boomcat" loading="lazy">
+                </li>
+            
+                <li class="filter-item depressed">
+                    <img src="images/Crying cat.jpeg" alt="Crying" loading="lazy">
+                </li>
+            
+                <li class="filter-item judgemental">
+                    <img src="images/zizecat.jpeg" alt="zizecat" id="zizecat" loading="lazy">
+                    <audio id="zizeCatAudio" src="audio/zize.mp3"></audio>
+                </li>
+            
+                <li class="filter-item speechless">
+                    <img src="images/confue.jpeg" alt="confuecat" loading="lazy">
+                </li>
+            
+                <li class="filter-item xxoo">
+                    <img src="images/In Love Cat GIF.gif" alt="inlovecat" loading="lazy">
+                </li>
+            
+            </ul> -->
+
         </div>
     </main>
 
