@@ -1,26 +1,30 @@
 var video;
 
 window.addEventListener("load", function() {
-	console.log("Good job opening the window")
+	console.log("Good job opening the window");
 	video = document.querySelector("video");
-});
 
+	const playPauseBtn = document.querySelector("#play-pause");
 
-const playPauseBtn = document.querySelector("#play-pause");
-
-playPauseBtn.addEventListener("click", function () {
-	if (video.paused) {
-		video.play();
-		console.log("Play Video");
-		let volume = video.volume * 100;
-		document.querySelector("#volume").textContent = volume + "%";
-		console.log("Volume: " + volume + "%");
-		this.textContent = "⏸️";
-	} else {
-		video.pause();
-		console.log("Pause Video");
-		this.textContent = "▶️";
-	}
+	playPauseBtn.addEventListener("click", function () {
+		if (video.paused) {
+			video.play();
+			console.log("Play Video");
+			let volume = video.volume * 100;
+			const volumeElement = document.querySelector("#volume-level");
+			if (volumeElement) {
+				volumeElement.textContent = volume + "%";
+				console.log("Volume: " + volume + "%");
+			} else {
+				console.warn("Element with ID 'volume-level' not found.");
+			}
+			playPauseBtn.textContent = "⏸️"; // Explicitly updating textContent
+		} else {
+			video.pause();
+			console.log("Pause Video");
+			playPauseBtn.textContent = "▶️"; // Explicitly updating textContent
+		}
+	});
 });
 
 
