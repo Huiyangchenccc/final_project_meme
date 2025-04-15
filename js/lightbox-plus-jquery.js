@@ -11151,3 +11151,5 @@ return jQuery;
 
   return new Lightbox();
 }));
+
+document.getElementById("year").innerHTML = new Date().getFullYear();
