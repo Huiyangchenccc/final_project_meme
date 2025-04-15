@@ -179,7 +179,6 @@ video#player1 {
 
 .options #slower, #faster, #mute {
   background-color: #ffffff;
-  color: white;
   border-radius: 50px;
   margin: 10px;
   padding: 10px 16px;
@@ -193,7 +192,6 @@ video#player1 {
 
 #play-pause {
   background-color: #ffffff;
-  color: white;
   border-radius: 50px;
   margin: 10px;
   padding: 10px 16px;
