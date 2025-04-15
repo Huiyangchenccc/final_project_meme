@@ -144,6 +144,20 @@ img#huh_cover {
   max-width: 100%;
 }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.gallery img {
+  object-fit: cover;
+  height: 200px;
+  width: auto;
+}
+
 /* grinch */
 img#grinch_cover {
   width: 100%;
@@ -152,11 +166,59 @@ img#grinch_cover {
 }
 
 /* About */
+
+figure{
+  color:white
+}
+
 video#player1 {
   width: 100%;
   height: auto;
   max-width: 100%;
 }
+
+.options #slower, #faster, #mute {
+  background-color: #ffffff;
+  color: white;
+  border-radius: 50px;
+  margin: 10px;
+  padding: 10px 16px;
+  font-size: 2em;
+  transition: transform 0.2s ease;
+}
+
+.options #slower:hover, #faster:hover, #mute:hover {
+  transform: scale(1.2);
+}
+
+#play-pause {
+  background-color: #ffffff;
+  color: white;
+  border-radius: 50px;
+  margin: 10px;
+  padding: 10px 16px;
+  font-size: 2em;
+  transition: transform 0.2s ease;
+}
+
+#play-pause:hover {
+  transform: scale(1.2);
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 50%;
+  height: 20px;
+  background: pink;
+  border-radius: 20px;
+  outline: none;
+}
+.volume-level {
+  color: white;
+  margin-bottom: 30px;
+}
+
+
 
 /* For larger screens: multiple images in a row */
 @media screen and (min-width: 600px) {
