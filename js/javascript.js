@@ -78,6 +78,38 @@ document.addEventListener("DOMContentLoaded", function () {
                zizeCatAudio.currentTime = 0;
            });
        }
+
+       // Crying cat hover audio
+       const cryingCatImg = document.getElementById("cryingcat");
+       const cryingCatAudio = document.querySelector("audio[src='audio/cryingcat.mp3']");
+   
+       if (cryingCatImg && cryingCatAudio) {
+           cryingCatImg.addEventListener("mouseenter", () => {
+               cryingCatAudio.currentTime = 0;
+               cryingCatAudio.play();
+           });
+   
+           cryingCatImg.addEventListener("mouseleave", () => {
+               cryingCatAudio.pause();
+               cryingCatAudio.currentTime = 0;
+           });
+       }
+
+       // Apple cat hover audio
+       const appleCatImg = document.getElementById("applecat");
+       const appleCatAudio = document.querySelector("audio[src='audio/applecat.mp3']");
+   
+       if (appleCatImg && appleCatAudio) {
+           appleCatImg.addEventListener("mouseenter", () => {
+               appleCatAudio.currentTime = 0;
+               appleCatAudio.play();
+           });
+   
+           appleCatImg.addEventListener("mouseleave", () => {
+               appleCatAudio.pause();
+               appleCatAudio.currentTime = 0;
+           });
+       }
 });
 
 

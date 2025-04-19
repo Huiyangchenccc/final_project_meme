@@ -148,6 +148,7 @@ button#back:active {
 h1 {
   font-size: 35px;
   color: rgb(255, 194, 240);
+  font-weight: bold;
   text-align: left;
   line-height: 45px;
   margin-top: 30px;
@@ -155,7 +156,7 @@ h1 {
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 24px;
   color: white;
   text-align: left;
   line-height: 35px;
@@ -235,6 +236,24 @@ img#huh_cover {
   max-width: 100%;
 }
 
+p#huhcat {
+  font-size: 16px;
+  color: #ffb6c1;
+  text-align: left;
+  line-height: 1.8;
+  background-color: rgba(255, 182, 193, 0.15);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+p#huhcat:hover {
+  transform: scale(1.08);
+  background-color: rgba(255, 182, 193, 0.3);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -255,6 +274,25 @@ img#grinch_cover {
   height: auto;
   max-width: 100%;
 }
+
+p#grinch {
+  font-size: 16px;
+  color: #ffb6c1;
+  text-align: left;
+  line-height: 1.8;
+  background-color: rgba(255, 182, 193, 0.15);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+p#grinch:hover {
+  transform: scale(1.08);
+  background-color: rgba(255, 182, 193, 0.3);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
 
 /* About */
 
@@ -451,6 +489,20 @@ h1, h2, p {
     /* Set a fixed height */
     object-fit: cover;
     /* Ensure the image fits within the height */
+  }
+
+  img#huh_cover {
+    max-width: 40%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  img#grinch_cover {
+    max-width: 40%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
   }
 }
 

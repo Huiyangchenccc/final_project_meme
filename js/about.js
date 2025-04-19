@@ -91,3 +91,22 @@ function drop(event) {
         }
     }
 }
+
+function drop(event) {
+    event.preventDefault();
+    const data = event.dataTransfer.getData("text");
+    const draggedElement = document.getElementById(data);
+    if (event.target.classList.contains('droptarget')) {
+        event.target.appendChild(draggedElement);
+
+        if (event.target.id === "end") {
+            document.getElementById("hiddenImage").style.display = "block";
+            document.getElementById("start").style.display = "none";
+            document.getElementById("end").style.display = "none";
+
+            setTimeout(() => {
+                alert("YAY! Enjoy your apple cat!");
+            }, 100);
+        }
+    }
+}
