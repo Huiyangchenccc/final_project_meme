@@ -127,11 +127,24 @@ function filterSelection(category) {
         }
     }
 
-    // Update button active state
     let buttons = document.querySelectorAll("#myBtnContainer .btn");
     buttons.forEach(btn => btn.classList.remove("active"));
     event.target.classList.add("active");
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const aboutLink = document.querySelector('a[href="about.html"]');
+
+    if (aboutLink) {
+        aboutLink.addEventListener("click", function (e) {
+            const confirmed = confirm("⚠️ Warning: Flashing lights ahead!\n\nAre you sure you want to proceed?");
+            if (!confirmed) {
+                e.preventDefault(); 
+            }
+        });
+    }
+});
 
 
 document.getElementById("year").innerHTML = new Date().getFullYear();
